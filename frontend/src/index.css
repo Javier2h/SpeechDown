@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #18181b; /* fondo oscuro */
+  color: #f3f4f6; /* texto claro */
+}
+
+body {
+  @apply m-0 flex items-center justify-center min-h-screen bg-[#18181b] text-[#f3f4f6];
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #a78bfa; /* morado claro */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+select,
+input[type="text"] {
+  @apply w-full max-w-md px-4 py-2 rounded-md shadow-sm border border-[#27272a] bg-[#23232b] text-[#f3f4f6] focus:outline-none focus:ring-2 focus:ring-[#a78bfa];
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  @apply rounded-md font-semibold px-6 py-2 transition duration-200;
+}
+
+button.bg-green {
+  background-color: #22d3ee;
+  color: #18181b;
+}
+button.bg-green:hover {
+  background-color: #0891b2;
+}
+
+button.bg-purple {
+  background-color: #a78bfa;
+  color: #18181b;
+}
+button.bg-purple:hover {
+  background-color: #7c3aed;
+}
+
+.chart-container canvas {
+  background-color: #23232b;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.chart-bar {
+  background-color: #a78bfa !important;
+}
