@@ -40,6 +40,27 @@ Desarrollada con tecnologías modernas y un enfoque inclusivo, la plataforma fac
 
 ## 🧪 Uso del Aplicativo
 
-El servicio SOAP expone un método llamado `GetTrackingStatus` que recibe un número de guía y devuelve el historial de eventos del paquete.
+Primer paso una vez ejecutado el servicio, es agregar un niño para agregarlo a la activiadad, agregar el tema que se desea hablar y por ultimo generar la actividad.
 
 ---
+## 🧪 Instalacion
+
+- Clonar todo el proyecto
+- Abrir pgAdmin4, ya que la base de datos que seleccionamos es PostgreSQL
+- Crear una base de datos con cualquier nombre.
+- modificar el archivo .env con el nombre de la base de datos que se creo, si se tiene un user o pass diferente para acceder a la base de datos.
+- En el mismo archivo debemos agregar nuestra key tanto de OpenAI como el archivo Json de nuestra key del servicio de Google para la voz.
+- Para levantar el servicio necesitamos entrar a un terminal y dentro de este terminal ejecutar los siguietnes comandos.
+- cd backend
+- npm install  ( en el caso que tenga algun error al ejecturar este comando, ejecture el siguiente  Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process , este comando es para ejecutar scrips dentro del simbolo del siustema)
+- npm start
+- Con estos pasos tendremos el backend inicializado.
+- Para ejecutar el Frontend deguimos los siguientes pasos en otro terminal.
+- cd frontend
+- npm run dev
+- Damos click en el link que nos genera para ingresar al frontend que ya esta conecntado con el backend
+- Podemos utilizar
+
+---
+
+URL Video: 
